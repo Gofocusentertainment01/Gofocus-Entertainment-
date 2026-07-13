@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Top 10 Nollywood Movies to Watch in 2026 | GOFOCUS Entertainment</title>
+
+<meta name="description" content="Discover the top 10 Nollywood movies to watch in 2026.">
+
+<meta property="og:title" content="Top 10 Nollywood Movies to Watch in 2026">
+<meta property="og:description" content="The biggest Nollywood movies you shouldn't miss in 2026.">
+<meta property="og:image" content="Top 10 Nollywood movies.png">
+<meta property="og:type" content="article">
+
+<style>
+body{
+    font-family:Arial,sans-serif;
+    background:#f5f5f5;
+    margin:0;
+    line-height:1.8;
+}
+nav{
+    background:darkblue;
+    padding:15px;
+    text-align:center;
+}
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:10px;
+}
+.container{
+    max-width:900px;
+    margin:auto;
+    background:white;
+    padding:20px;
+}
+img{
+    width:100%;
+    border-radius:10px;
+}
+footer{
+    background:darkblue;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+}
+</style>
+
+</head>
+
+<body>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="news.html">News</a>
+<a href="music.html">Music</a>
+<a href="movies.html">Movies</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+<div class="container">
+
+<h1>Top 10 Nollywood Movies to Watch in 2026</h1>
+
+<p><strong>Published by GOFOCUS Entertainment</strong></p>
+
+<img src="Top 10 Nollywood movies.png" alt="Top 10 Nollywood Movies to Watch in 2026">
+
+<p>Nollywood continues to raise the bar with compelling storytelling, outstanding performances, and world-class production. In 2026, the Nigerian film industry has delivered an exciting mix of drama, romance, thrillers, historical epics, and inspiring stories that have captivated audiences both at home and abroad.</p>
+
+<h2>Top 10 Nollywood Movies</h2>
+
+<ol>
+<li><strong>Call of My Life</strong> – A touching family drama filled with emotional moments and powerful performances.</li>
+
+<li><strong>Love and New Notes</strong> – A romantic story about love, hope, and second chances.</li>
+
+<li><strong>The Return of Arinzo</strong> – A suspense-filled thriller with unexpected twists.</li>
+
+<li><strong>Onobiren: A Woman's Story</strong> – An inspiring film celebrating resilience and determination.</li>
+
+<li><strong>To Adaego With Love</strong> – A beautiful historical romance with unforgettable performances.</li>
+
+<li><strong>Aba Blues</strong> – A moving drama exploring friendship, ambition, and sacrifice.</li>
+
+<li><strong>Evi</strong> – A mystery drama combining culture, emotion, and suspense.</li>
+
+<li><strong>Mothers of Chibok</strong> – A powerful story of courage, hope, and resilience.</li>
+
+<li><strong>Alive Till Dawn</strong> – An action-packed thriller that keeps viewers on the edge of their seats.</li>
+
+<li><strong>Hussaini</strong> – A compelling drama with outstanding acting and a memorable storyline.</li>
+</ol>
+
+<h2>Final Thoughts</h2>
+
+<p>Nollywood continues to prove why it is one of the world's fastest-growing film industries. These ten movies showcase the creativity, talent, and passion of Nigerian filmmakers. Whether you enjoy romance, action, historical epics, or emotional dramas, there is something for everyone on this list. Add these titles to your watchlist and experience the very best of Nollywood in 2026.</p>
+
+</div>
+
+<footer>
+© 2026 GOFOCUS Entertainment. All Rights Reserved.
+</footer>
+
+</body>
+</html>
