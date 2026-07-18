@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Late Bell - Episode 1</title>
+</head>
+<body style="background:#111;color:white;font-family:Arial;text-align:center;">
+
+<h1>THE LATE BELL - Episode 1</h1>
+
+<video width="100%" controls controlsList="nodownload">
+    <source src="https://gofocusentertainment01.github.io/Gofocus-Entertainment-/videos/the-late-bell-episode1.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+</body>
+</html>
