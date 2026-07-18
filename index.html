@@ -1,458 +1,360 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>GOFOCUS Entertainment</title>
-    <style>
-        .sponsored-section {
-    padding: 40px 20px;
-    background: #111;
-    color: white;
-}
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GOFOCUS Entertainment</title>
+
 <style>
-</head>
 
-<body>
-.sponsored-section h2 {
-    text-align: center;
-    margin-bottom: 25px;
+    .poster-row img{
+transition:0.3s ease;
+cursor:pointer;
 }
 
-.ad-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
+.poster-row img:hover{
+transform:scale(1.08);
+box-shadow:0 0 25px rgba(229,9,20,.8);
 }
 
-.ad-box {
-    background: #222;
-    border: 2px dashed #c00000;
-    border-radius: 10px;
-    padding: 20px;
-    width: 300px;
-    text-align: center;
+.poster-row{
+display:flex;
+overflow-x:auto;
+gap:20px;
+padding-bottom:15px;
+scrollbar-width:none;
 }
 
-.ad-box h3 {
-    color: #ff4444;
+.poster-row::-webkit-scrollbar{
+display:none;
 }
-.ad-box a {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 10px 20px;
-    background: #c00000;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
 }
 
-.whatsapp-float {
-    position: fixed;
-    ...
-}
-.whatsapp-float {
-    position: fixed;
-    width: 60px;
-    height: 60px;
-    bottom: 20px;
-    right: 20px;
-    background: #25D366;
-    color: white;
-    border-radius: 50%;
-    text-align: center;
-    font-size: 30px;
-    line-height: 60px;
-    text-decoration: none;
-    z-index: 9999;
-}
-
-.whatsapp-float:hover {
-    transform: scale(1.1);
-}
-</style>
-
-   <section class="advertise-banner">
-    <h2>🚀 Advertise With Gofocus Entertainment</h2>
-    <p>Promote your business, music, video game, event, or brand to our growing audience.</p>
-    <a href="advertise.html" class="advertise-btn">Book an Advertisement</a>
-       <section class="sponsored-section">
-    <h2>Sponsored Advertisements</h2>
-
-    <div class="ad-grid">
-
-        <div class="ad-box">
-            <h3>Your Game Here</h3>
-            <p>This space is available for video game advertisements.</p>
-            <a href="advertise.html">Advertise Here</a>
-        </div>
-
-        <div class="ad-box">
-            <h3>Your Business Here</h3>
-            <p>Promote your business to our growing audience.</p>
-            <a href="advertise.html">Advertise Here</a>
-        </div>
-
-        <div class="ad-box">
-            <h3>Your Music Here</h3>
-            <p>Launch your new song or album with Gofocus Entertainment.</p>
-            <a href="advertise.html">Advertise Here</a>
-        </div>
-
-    </div>
-       </section>
-       
-}
-   </section> 
-    
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-KLJFY99XKP"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-KLJFY99XKP');
-</script>
-<style>
-    .advertise-banner {
-    background: linear-gradient(135deg, #c00000, #000);
-    color: white;
-    text-align: center;
-    padding: 40px 20px;
-    margin: 30px 0;
-    border-radius: 12px;
-}
-
-.advertise-banner h2 {
-    margin-bottom: 10px;
-}
-
-.advertise-banner p {
-    font-size: 18px;
-    margin-bottom: 20px;
-}
-
-.advertise-btn {
-    display: inline-block;
-    background: #fff;
-    color: #c00000;
-    text-decoration: none;
-    padding: 12px 24px;
-    font-weight: bold;
-    border-radius: 6px;
-}
-
-.advertise-btn:hover {
-    background: #f0f0f0;
-    }
 body{
-    background-color: lightblue;
-    text-align:center;
-    font-family:Arial;
-}
-h1{
-
-    color: darkblue;
+background:#0b0b0b;
+color:#fff;
 }
 
-p{
-    font-size:20px;
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:rgba(0,0,0,.9);
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+z-index:1000;
 }
 
-button{
-    background-color: blue;
-    color:white;
-    padding:15px;
-    border:none;
-    border-radius:10px;
-}
-
-
-nav{
-    background-color: darkblue;
-    padding: 15px;
+.logo img{
+height:70px;
 }
 
 nav a{
-    color: white;
-    text-decoration: none;
-    margin: 10px;
-    font-size: 18px;
+color:#fff;
+text-decoration:none;
+margin-left:25px;
+font-weight:bold;
+transition:.3s;
 }
 
-footer{
-    background-color: darkblue;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 30px;
+nav a:hover{
+color:#E50914;
 }
 
+.hero{
+height:100vh;
+display:flex;
+align-items:center;
+padding:90px;
+background:
+linear-gradient(to right,rgba(0,0,0,.92),rgba(0,0,0,.25)),
+url("the-late-bell-poster.jpg") center center/cover no-repeat;
+}
+
+.hero-content{
+max-width:600px;
+}
+
+.hero h1{
+font-size:60px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:20px;
+margin-bottom:30px;
+line-height:1.6;
+}
+
+.btn{
+display:inline-block;
+padding:15px 35px;
+background:#E50914;
+color:#fff;
+text-decoration:none;
+border-radius:6px;
+font-weight:bold;
+}
+
+.btn:hover{
+background:#b20710;
+}
 </style>
-
-<meta property="og:title" content="How to Start an Acting Career in Nigeria (2026 Guide)">
-<meta property="og:description" content="A complete beginner's guide to becoming an actor or actress in Nigeria's Nollywood industry.">
-<meta property="og:image" content="https://yourwebsite.com/images/acting-career-nigeria.jpg">
-<meta property="og:url" content="https://yourwebsite.com/how-to-start-acting-career-in-nigeria.html">
-<meta property="og:type" content="article">
-    
-    
 </head>
-<style>
-.watch-btn{
-    display:inline-block;
-    background:#e50914;
-    color:white;
-    padding:12px 25px;
-    text-decoration:none;
-    border-radius:6px;
-    font-weight:bold;
-}
 
-.watch-btn:hover{
-    background:#b20710;
-}
-</style>
-    
 <body>
 
+<header>
+
+<div class="logo">
+<img src="Gofocus Entertainment logo.png" alt="GOFOCUS Entertainment">
+</div>
 
 <nav>
-    <a href="index.html">Home</a> |
-    <a href="news.html">News</a> |
-    <a href="music.html">Music</a> |
-    <a href="movies.html">Movies</a> |
-    <a href="advertise.html">Advertise</a>
-    <a href="contact.html">Contact</a>
+<a href="index.html">Home</a>
+<a href="news.html">News</a>
+<a href="movies.html">Movies</a>
+<a href="music.html">Music</a>
+<a href="advertise.html">Advertise</a>
+<a href="contact.html">Contact</a>
 </nav>
 
-<h1>GOFOCUS Entertainment</h1>
-<p>Your home for entertainment news, music, movies, and celebrity updates.</p>
+</header>
 
-<img src="Gofocus Entertainment logo.png" alt="GOFOCUS Entertainment Logo" width="120">
-<h2>Latest News</h2>
+<<section class="hero">
 
-    
-<div class="movie-card">
-    <a href="movies/the-late-bell.html">
-        <img src="the-late-bell-poster.jpg" alt="The Late Bell" 
-            style="width:100%;">
-    <h3>THE LATE BELL</h3>
-    <p>Episode 1</p>
-    <a href="movies.html">Watch Now</a>
+<div class="hero-content">
 
-        <div class="movie-card">
-    <img src="image/escape-from homework episode 2.jpg">
-    <div class="movie-info">
-        <h2>ESCAPE FROM HOMEWORK</h2>
-        <p>Episode 2</p>
- <a href="movie.html" class="watch-btn">▶ Watch Now</a>
+<span style="color:#E50914;font-size:18px;font-weight:bold;">
+<section style="padding:60px 5%;">
+
+<h2 style="color:#fff;font-size:32px;margin-bottom:25px;">
+🔥 GOFOCUS Originals
+</h2>
+
+<div class="poster-row">
+
+<div style="min-width:220px;">
+<img src="the-late-bell-poster.jpg"
+style="width:220px;height:330px;object-fit:cover;border-radius:10px;">
+<h3 style="margin-top:10px;">The Late Bell</h3>
 </div>
 
-<style>
-.movie-card{
-    max-width:400px;
-    margin:30px auto;
-    background:#111;
-    border-radius:15px;
-    overflow:hidden;
-    color:#fff;
-    text-align:center;
-    box-shadow:0 0 15px rgba(0,0,0,.4);
-}
-.movie-thumb{
-    width:100%;
-    display:block;
-}
-.movie-info{
-    padding:20px;
-}
-.watch-btn{
-    display:inline-block;
-    margin-top:15px;
-    padding:12px 25px;
-    background:#e50914;
-    color:#fff;
-    text-decoration:none;
-    border-radius:6px;
-    font-weight:bold;
-}
-.watch-btn:hover{
-    background:#b20710;
-}
-</style>
-    
-    
+<div style="min-width:220px;">
+<img src="image/escape-from homework episode 2.jpg"
+style="width:220px;height:330px;object-fit:cover;border-radius:10px;">
+<h3 style="margin-top:10px;">Escape From Homework</h3>
+</div>
+
+<div style="min-width:220px;">
+<img src="coming-soon.jpg"
+style="width:220px;height:330px;object-fit:cover;border-radius:10px;">
+<h3 style="margin-top:10px;">Coming Soon</h3>
+</div>
+
+</div>
+
+</section>
+<!-- TRENDING NEWS -->
+
+<section style="padding:60px 5%;">
+
+<h2 style="color:#E50914;font-size:35px;margin-bottom:30px;">
+🔥 Trending News
+</h2>
+
+<div style="display:flex;flex-wrap:wrap;gap:25px;justify-content:center;">
+
+<div style="background:#1b1b1b;width:320px;border-radius:12px;overflow:hidden;">
+<img src="images/oyo-principal.jpg" style="width:100%;">
+<div style="padding:20px;">
+<h3>Rescued Oyo Principal Reveals Why Teacher Was Beheaded</h3>
+<p>Read the full story on GOFOCUS Entertainment.</p>
+<a href="news.html" class="btn">Read More</a>
+</div>
+</div>
+
+<div style="background:#1b1b1b;width:320px;border-radius:12px;overflow:hidden;">
+<img src="messi_news.jpg" style="width:100%;">
+<div style="padding:20px;">
+<h3>Should Argentina Let Someone Else Take Penalties Instead of Messi?</h3>
+<p>Latest football updates and analysis.</p>
+<a href="news.html" class="btn">Read More</a>
+</div>
+</div>
+
+<div style="background:#1b1b1b;width:320px;border-radius:12px;overflow:hidden;">
+<img src="makinde-news.jpg" style="width:100%;">
+<div style="padding:20px;">
+<h3>Makinde Reacts After School Kidnapping</h3>
+<p>Latest political and education news.</p>
+<a href="news.html" class="btn">Read More</a>
+</div>
+</div>
+
+</div>
+
 </section>
 
-<style>
-.featured-movie{
-    text-align:center;
-    padding:40px;
-}
+<!-- GOFOCUS ORIGINALS -->
 
-.watch-btn{
-    display:inline-block;
-    background:#e50914;
-    color:#fff;
-    padding:14px 30px;
-    text-decoration:none;
-    border-radius:6px;
-    font-weight:bold;
-}
+<section style="padding:60px 5%;">
 
-.watch-btn:hover{
-    background:#b20710;
-}
-</style>
-    
-<section style="max-width:900px;margin:40px auto;text-align:center;">
-    <h2>🎬 GOFOCUS AI VIDEO MASTER CLASS</h2>
+<h2 style="color:#E50914;font-size:35px;margin-bottom:30px;">
+🎬 GOFOCUS Originals
+</h2>
 
-    <video controls width="100%">
-        <source src="videos/gofocus-ai-masterclass.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
+<div style="display:flex;gap:25px;overflow:auto;">
 
-    <h3>Training Fee: ₦1,000</h3>
+<div style="min-width:250px;">
+<img src="the-late-bell-poster.jpg" style="width:100%;border-radius:10px;">
+<h3>The Late Bell</h3>
+<a href="movies.html" class="btn">▶ Watch</a>
+</div>
 
-    <p>Learn AI Video Creation, AI Images, Character Consistency, Mobile Editing and more.</p>
+<div style="min-width:250px;">
+<img src="image/escape-from homework episode 2.jpg" style="width:100%;border-radius:10px;">
+<h3>Escape From Homework</h3>
+<a href="movies.html" class="btn">▶ Watch</a>
+</div>
 
-    <a href="https://wa.me/2347031485032?text=Hello%20Gofocus%20Entertainment,%20I%20want%20to%20join%20the%20AI%20Video%20Master%20Class."
-       style="display:inline-block;padding:15px 30px;background:#25D366;color:#fff;text-decoration:none;border-radius:8px;font-weight:bold;">
-        📲 Join on WhatsApp
-    </a>
+<div style="min-width:250px;">
+<img src="coming-soon.jpg" style="width:100%;border-radius:10px;">
+<h3>Coming Soon</h3>
+<a href="movies.html" class="btn">View</a>
+</div>
+
+</div>
+
+    </section>
+    <!-- LATEST MUSIC -->
+
+<section style="padding:60px 5%;background:#111;">
+
+<h2 style="color:#E50914;font-size:35px;margin-bottom:30px;">
+🎵 Latest Music
+</h2>
+
+<div style="display:flex;flex-wrap:wrap;gap:25px;justify-content:center;">
+
+<div style="background:#1b1b1b;width:300px;border-radius:12px;padding:20px;text-align:center;">
+<img src="music-banner.jpg" style="width:100%;border-radius:10px;">
+<h3>Latest GOFOCUS Music</h3>
+<p>Discover the newest songs and albums.</p>
+<a href="music.html" class="btn">🎧 Listen Now</a>
+</div>
+
+<div style="background:#1b1b1b;width:300px;border-radius:12px;padding:20px;text-align:center;">
+<img src="album-coming-soon.jpg" style="width:100%;border-radius:10px;">
+<h3>New Releases</h3>
+<p>Fresh music updated regularly.</p>
+<a href="music.html" class="btn">Browse Music</a>
+</div>
+
+</div>
+
 </section>
-    
-<article class="news-card">
-    <a href="oyo-principal.html">
-        <img src="images/oyo-principal.jpg" alt="Rescued Oyo Principal Reveals Why Teacher Was Beheaded by Kidnappers">
-        <h2>Rescued Oyo Principal Reveals Why Teacher Was Beheaded by Kidnappers</h2>
-    </a>
 
-    <p>
-        The rescued Oyo principal reveals why Mathematics teacher Mr. Michael Oyedokun was beheaded during captivity as kidnappers sought to pressure the government.
-    </p>
+<!-- AI MASTER CLASS -->
 
-    <a class="read-more" href="oyo-principal.html">Read Full Story →</a>
-</article>
-<h3>Top 10 Nollywood Movies to Watch in 2026</h3>
-    
-<img src="top%2010%20Nollywood%20movies.png" alt="Top 10 Nollywood Movies" width="100%">
+<section style="padding:70px 5%;text-align:center;">
 
-<p>Discover the best Nollywood movies to watch in 2026, featuring drama, romance, thrillers, and more.</p>
+<h2 style="color:#E50914;font-size:40px;">
+🎓 GOFOCUS AI VIDEO MASTER CLASS
+</h2>
 
-<a href="news.html">Read Full Story</a>
+<p style="margin:20px auto;max-width:700px;font-size:20px;">
+Learn AI video creation, cinematic storytelling, image generation,
+mobile editing and character consistency.
+</p>
 
-<hr>
-    
-    
-<article>
-<h1>How to Start an Acting Career in Nigeria (2026 Guide)</h1>
+<h3 style="font-size:32px;margin-bottom:20px;">
+Training Fee: ₦1,000
+</h3>
 
-<img src="acting-career-nigeria.jpg" alt="Young actors during a Nollywood audition" width="100%">
-
-<p>Nigeria's Nollywood industry offers many opportunities for aspiring actors. This guide explains practical steps to begin your acting career.</p>
-<h2>Latest News</h2>
-
-<img src="music-producer-guide.png" alt="How to Become a Music Producer" width="100%">
-
-<h3>How to Become a Music Producer: A Complete Guide for Beginners</h3>
-
-<p>Discover how to start a successful career in music production with this step-by-step beginner's guide.</p>
-
-<a href="news.html">Read Full Story</a>
-    
-<h1>Should Argentina Let Someone Else Take Penalties Instead of Messi?</h1>
-
-<img src="messi_news.jpg" alt="Messi">
-
-<p><strong>GOFOCUS Sports | July 2026</strong></p>
-
-<!-- Full article goes here -->
-    
-<article>
-    
-    <h3><a href="messi-news.html">Messi Explains Emotional Celebration After Argentina's Victory</a></h3>
-    <p>Read why Lionel Messi became emotional after Argentina's dramatic victory.</p>
-    
-</article>
-
-<h2>Makinde Reacts After School Kidnapping Follows Presidential Declaration</h2>
-<img src="makinde-news.jpg" width="350" alt="Makinde News">
-<a href="news.html">Read Full Story</a>
-
-<h3>APC Chieftain: Retaining Shettima Is Tinubu's Strongest Political Move Ahead of 2027</h3>
-
-<img src="tinubu-shettima.jpg" alt="Tinubu and Shettima" width="300">
-
-<br><br>
-
-<a href="news.html">Read Full Story</a>
-
-<hr>
-    
-<hr>
-
-<h2>🎵 Latest Music</h2>
-
-<p>Discover the latest songs from GOFOCUS Entertainment. Listen online and download your favorite tracks.</p>
-
-<img src="music-banner.jpg" width="320" alt="GOFOCUS Entertainment Music">
-
-<br><br>
-
-<a href="music.html">
-    <button>🎧 Listen & Download All Songs</button>
+<a href="https://wa.me/2347031485032?text=Hello%20GOFOCUS%20Entertainment,%20I%20want%20to%20join%20the%20AI%20Video%20Master%20Class."
+class="btn">
+📲 Join on WhatsApp
 </a>
 
-<hr>
+</section>
+<!-- ADVERTISE WITH GOFOCUS -->
 
-<h2>Latest Entertainment News</h2>
-<p><a href="first-news.html">Davido Announces New Album</a></p>
-<div>
-    <h3>🎵 New Music</h3>
-    <p>Stay updated with the latest songs and albums.</p>
+<section style="padding:70px 5%;background:#111;text-align:center;">
 
-    <h3>🎬 Latest Movies</h3>
-    <p>Read about new movie releases and reviews.</p>
+<h2 style="color:#E50914;font-size:40px;">
+💼 Advertise With GOFOCUS Entertainment
+</h2>
 
-    <h3>⭐ Celebrity News</h3>
-    <p>Get the latest celebrity gossip and trending stories.</p>
+<p style="max-width:700px;margin:20px auto;font-size:20px;">
+Promote your business, music, movie, event or brand to thousands of visitors.
+</p>
+
+<a href="advertise.html" class="btn">Advertise Now</a>
+
+</section>
+
+<!-- SPONSORED ADS -->
+
+<section style="padding:60px 5%;">
+
+<h2 style="color:#E50914;text-align:center;margin-bottom:30px;">
+Sponsored Advertisements
+</h2>
+
+<div style="display:flex;flex-wrap:wrap;gap:25px;justify-content:center;">
+
+<div style="background:#1b1b1b;padding:25px;border-radius:10px;width:300px;text-align:center;">
+<h3>Your Business Here</h3>
+<p>Reach thousands of entertainment lovers.</p>
+<a href="advertise.html" class="btn">Book Now</a>
 </div>
 
+<div style="background:#1b1b1b;padding:25px;border-radius:10px;width:300px;text-align:center;">
+<h3>Your Music Here</h3>
+<p>Promote your latest single or album.</p>
+<a href="advertise.html" class="btn">Book Now</a>
+</div>
 
+<div style="background:#1b1b1b;padding:25px;border-radius:10px;width:300px;text-align:center;">
+<h3>Your Movie Here</h3>
+<p>Advertise your movie or TV series.</p>
+<a href="advertise.html" class="btn">Book Now</a>
+</div>
 
+</div>
 
+</section>
 
+<footer style="background:#000;padding:40px;text-align:center;">
 
+<h2>GOFOCUS Entertainment</h2>
 
+<p>Your Home for Entertainment News, Movies and Music.</p>
 
+<p>
+<a href="about.html" style="color:white;">About</a> |
+<a href="privacy.html" style="color:white;">Privacy</a> |
+<a href="terms.html" style="color:white;">Terms</a> |
+<a href="contact.html" style="color:white;">Contact</a>
+</p>
 
+<p>© 2026 GOFOCUS Entertainment. All Rights Reserved.</p>
 
-
-
-<button onclick="sayHello()">Explore</button>
-
-<script>
-function sayHello() {
-    alert("Welcome to GOFOCUS Entertainment!");
-}
-</script>
-
-<footer>
-    <p>© 2026 GOFOCUS Entertainment. All rights reserved.</p>
 </footer>
-<hr>
 
-<a href="about.html">About Us</a> |
-<a href="privacy.html">Privacy Policy</a> |
-<a href="terms.html">Terms & Conditions</a> |
-<a href="Contact.html">Contact</a>
-<a href="https://wa.me/2347031485032?text=Hello%20Gofocus%20Entertainment,%20I%20want%20to%20advertise%20on%20your%20website."
-   class="whatsapp-float"
-   target="_blank">
-    💬
+<a href="https://wa.me/2347031485032?text=Hello%20GOFOCUS%20Entertainment"
+style="position:fixed;bottom:20px;right:20px;background:#25D366;color:white;width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:30px;text-decoration:none;">
+💬
 </a>
+
 </body>
 </html>
