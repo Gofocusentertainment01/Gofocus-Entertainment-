@@ -93,11 +93,95 @@ color:#ccc;
 line-height:1.8;
 margin-top:20px;
 }
+.up-next{
+padding:70px 6%;
+}
 
+.episode-list{
+display:grid;
+gap:20px;
+margin-top:25px;
+}
+
+.episode{
+background:#181818;
+padding:20px;
+border-radius:12px;
+}
+
+.recommend{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+margin-top:30px;
+}
+
+.movie{
+background:#181818;
+border-radius:15px;
+overflow:hidden;
+transition:.3s;
+}
+
+.movie:hover{
+transform:translateY(-8px);
+}
+
+.movie img{
+width:100%;
+aspect-ratio:2/3;
+object-fit:cover;
+}
+
+.movie h3{
+padding:15px;
+text-align:center;
+}
 </style>
 
 </head>
+<section class="up-next">
 
+<h2>Up Next</h2>
+
+<div class="episode-list">
+
+<div class="episode">
+<h3>Episode 2 – The Pattern of Breaking</h3>
+<p>Coming Soon</p>
+<a href="#" class="btn">Coming Soon</a>
+</div>
+
+<div class="episode">
+<h3>Episode 3 – The Final Bell</h3>
+<p>Coming Soon</p>
+<a href="#" class="btn">Coming Soon</a>
+</div>
+
+</div>
+
+<h2 style="margin-top:60px;">More GOFOCUS Originals</h2>
+
+<div class="recommend">
+
+<div class="movie">
+<img src="forgotten-echoes-poster.jpg">
+<h3>Forgotten Echoes</h3>
+</div>
+
+<div class="movie">
+<img src="covenant-restoration-poster.jpg">
+<h3>Covenant Restoration</h3>
+</div>
+
+<div class="movie">
+<img src="coming-soon-poster.jpg">
+<h3>Coming Soon</h3>
+</div>
+
+</div>
+
+</section>
 <body>
 
 <header>
