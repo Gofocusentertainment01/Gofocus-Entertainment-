@@ -208,41 +208,36 @@ background:linear-gradient(transparent,#0b0b0b);
 
 .originals h2{
     color:#fff;
-    font-size:32px;
-    margin-bottom:30px;
+    font-size:34px;
+    margin-bottom:35px;
 }
 
 .originals-grid{
     display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:20px;
-}
-
-@media (max-width:768px){
-    .originals-grid{
-        grid-template-columns:repeat(2,1fr);
-    }
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:30px;
 }
 
 .movie-card{
-    background:#181818;
-    border-radius:12px;
+    background:#161616;
+    border-radius:16px;
     overflow:hidden;
-    transition:transform .3s ease, box-shadow .3s ease;
+    transition:.35s;
+    cursor:pointer;
+    box-shadow:0 10px 30px rgba(0,0,0,.45);
 }
 
 .movie-card:hover{
-    transform:translateY(-8px);
-    box-shadow:0 10px 25px rgba(229,9,20,.35);
+    transform:translateY(-10px) scale(1.03);
+    box-shadow:0 20px 45px rgba(229,9,20,.35);
 }
 
 .movie-card img{
     width:100%;
-    aspect-ratio:2/3;
+    height:360px;
     object-fit:cover;
     display:block;
 }
-
 
 .movie-info{
     padding:18px;
@@ -250,14 +245,16 @@ background:linear-gradient(transparent,#0b0b0b);
 
 .movie-info h3{
     color:#fff;
-    font-size:20px;
+    font-size:22px;
     margin-bottom:10px;
 }
 
-.movie-info p{
-    color:#bbb;
-    margin-bottom:15px;
-    }
+.rating{
+    color:#FFD700;
+    display:block;
+    margin-bottom:18px;
+    font-size:18px;
+}
 </style>
 </head>
 <body>
@@ -293,15 +290,16 @@ background:linear-gradient(transparent,#0b0b0b);
 </div>
 </section>
     <section class="originals">
+    <section class="originals">
     <h2>🎬 GOFOCUS ORIGINALS</h2>
 
     <div class="originals-grid">
 
         <div class="movie-card">
-            <img src="the-late-bell-poster.jpg" alt="The Late Bell">
+            <img src="home-or-school-poster.jpg" alt="Home or School">
             <div class="movie-info">
                 <h3>Home or School: The Late Bell</h3>
-                <p>⭐ 9.8</p>
+                <span class="rating">⭐ 9.8</span>
                 <a href="movies.html" class="watch-btn">▶ Watch Now</a>
             </div>
         </div>
@@ -310,7 +308,7 @@ background:linear-gradient(transparent,#0b0b0b);
             <img src="forgotten-echoes-poster.jpg" alt="Forgotten Echoes">
             <div class="movie-info">
                 <h3>Forgotten Echoes</h3>
-                <p>⭐ 9.7</p>
+                <span class="rating">⭐ 9.7</span>
                 <a href="movies.html" class="watch-btn">▶ Watch Now</a>
             </div>
         </div>
@@ -319,23 +317,22 @@ background:linear-gradient(transparent,#0b0b0b);
             <img src="covenant-restoration-poster.jpg" alt="Covenant Restoration">
             <div class="movie-info">
                 <h3>Covenant Restoration</h3>
-                <p>⭐ 9.9</p>
+                <span class="rating">⭐ 9.9</span>
                 <a href="movies.html" class="watch-btn">▶ Watch Now</a>
             </div>
         </div>
 
         <div class="movie-card">
-            <img src="coming-soon.jpg" alt="Coming Soon">
+            <img src="coming-soon-poster.jpg" alt="Coming Soon">
             <div class="movie-info">
                 <h3>Coming Soon</h3>
-                <p>🎬 New Release</p>
+                <span class="rating">🎬 New Release</span>
                 <a href="#" class="info-btn">More Info</a>
             </div>
         </div>
 
     </div>
-  </section>
-
+    </section>
     <!-- TRENDING NEWS -->
 <section style="padding:60px 5%;">
 
