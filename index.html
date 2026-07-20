@@ -61,7 +61,7 @@ header{
     display:block;
 }
 
-nav{
+
 nav{
     display:flex;
     align-items:center;
@@ -95,6 +95,8 @@ nav a:hover{
 
 nav a:hover::after{
     width:100%;
+
+ <input type="text" class="search-box" placeholder="Search movies...">
 }
 
 .hero{
@@ -254,6 +256,24 @@ background:linear-gradient(transparent,#0b0b0b);
     display:block;
     margin-bottom:18px;
     font-size:18px;
+}
+
+    .search-box{
+    padding:10px 15px;
+    border:none;
+    border-radius:20px;
+    background:#222;
+    color:#fff;
+    width:220px;
+    outline:none;
+}
+
+.search-box::placeholder{
+    color:#aaa;
+}
+
+.search-box:focus{
+    background:#333;
 }
 </style>
 </head>
