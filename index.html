@@ -275,6 +275,34 @@ background:linear-gradient(transparent,#0b0b0b);
 .search-box:focus{
     background:#333;
 }
+    .trending{
+    padding:60px 6%;
+}
+
+.trending h2{
+    margin-bottom:20px;
+}
+
+.trending-row{
+    display:flex;
+    gap:20px;
+    overflow-x:auto;
+    padding-bottom:15px;
+    scroll-behavior:smooth;
+}
+
+.trending-row::-webkit-scrollbar{
+    height:8px;
+}
+
+.trending-row::-webkit-scrollbar-thumb{
+    background:#E50914;
+    border-radius:10px;
+}
+
+.trending-row .movie-card{
+    min-width:220px;
+}
 </style>
 </head>
 <body>
@@ -359,7 +387,43 @@ A boy enters a mysterious school where every bell hides a secret.
 
     </div>
     </section>
-    <!-- TRENDING NEWS -->
+<section class="trending">
+
+<h2>🔥 Trending Now</h2>
+
+<div class="trending-row">
+
+<div class="movie-card">
+<a href="movie.html">
+<img src="the-late-bell-poster.jpg" alt="The Late Bell">
+</a>
+<h3>Home or School</h3>
+</div>
+
+<div class="movie-card">
+<a href="forgotten-echoes.html">
+<img src="forgotten-echoes-poster.jpg" alt="Forgotten Echoes">
+</a>
+<h3>Forgotten Echoes</h3>
+</div>
+
+<div class="movie-card">
+<a href="covenant-restoration.html">
+<img src="covenant-restoration-poster.jpg" alt="Covenant Restoration">
+</a>
+<h3>Covenant Restoration</h3>
+</div>
+
+<div class="movie-card">
+<img src="coming-soon-poster.jpg" alt="Coming Soon">
+<h3>Coming Soon</h3>
+</div>
+
+</div>
+
+</section>
+
+     <!-- TRENDING NEWS -->
 <section style="padding:60px 5%;">
 
 <h2 style="color:#E50914;font-size:35px;margin-bottom:30px;">
