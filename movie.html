@@ -134,7 +134,53 @@ margin-bottom:10px;
 color:#bbb;
 margin-bottom:20px;
 }
+.details{
+    padding:70px 6%;
+}
 
+.details h2{
+    font-size:32px;
+    margin:40px 0 20px;
+}
+
+.details p,
+.details li{
+    color:#ccc;
+    line-height:1.8;
+}
+
+.details ul{
+    padding-left:20px;
+}
+
+.more-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+    margin-top:30px;
+}
+
+.more-card{
+    background:#181818;
+    border-radius:15px;
+    overflow:hidden;
+    transition:.3s;
+}
+
+.more-card:hover{
+    transform:translateY(-8px);
+}
+
+.more-card img{
+    width:100%;
+    aspect-ratio:2/3;
+    object-fit:cover;
+}
+
+.more-card h3{
+    padding:15px;
+    text-align:center;
+  }
 </style>
 
 </head>
@@ -230,7 +276,45 @@ Every corridor hides another mystery...
 </div>
 
 </section>
+<section class="details">
 
+<h2>Story</h2>
+
+<p>
+A gifted student transfers to a mysterious school where every bell signals more than just the end of a class. As strange events unfold, hidden secrets, dangerous choices, and shocking discoveries force him to question everything he believes. Will he uncover the truth before the final bell rings?
+</p>
+
+<h2>Cast</h2>
+
+<ul>
+<li>Lead Student</li>
+<li>Principal</li>
+<li>Class Teacher</li>
+<li>Mysterious Stranger</li>
+</ul>
+
+<h2>More GOFOCUS Originals</h2>
+
+<div class="more-grid">
+
+<div class="more-card">
+<img src="forgotten-echoes-poster.jpg" alt="Forgotten Echoes">
+<h3>Forgotten Echoes</h3>
+</div>
+
+<div class="more-card">
+<img src="covenant-restoration-poster.jpg" alt="Covenant Restoration">
+<h3>Covenant Restoration</h3>
+</div>
+
+<div class="more-card">
+<img src="coming-soon-poster.jpg" alt="Coming Soon">
+<h3>Coming Soon</h3>
+</div>
+
+</div>
+
+  </section>
 </body>
 
   </html>
