@@ -301,10 +301,12 @@ background:linear-gradient(transparent,#0b0b0b);
 <div class="hero-overlay"></div>
 
 <div class="hero-content">
-    <h1>HOME OR SCHOOL<br>THE LATE BELL – EPISODE 1</h1>
-    <p>A boy enters a mysterious school where every bell hides a secret.</p>
+    <h1 id="hero-title">HOME OR SCHOOL<br>THE LATE BELL – EPISODE 1</h1>
+    <p id="hero-description">
+A boy enters a mysterious school where every bell hides a secret.
+    </p>
     <div class="hero-buttons">
-        <a href="movie.html" class="watch-btn">▶ Watch Now</a>
+        <a href="movie.html" class="watch-btn" id="hero-button">▶ Watch Now</a>
         <a href="movie.html" class="info-btn">More Info</a>
     </div>
 </div>
@@ -523,6 +525,47 @@ Sponsored Advertisements
 style="position:fixed;bottom:20px;right:20px;background:#25D366;color:white;width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:30px;text-decoration:none;">
 💬
 </a>
+<script>
+const slides = [
+{
+title:"HOME OR SCHOOL<br>THE LATE BELL",
+description:"A boy enters a mysterious school where every bell hides a secret.",
+image:"the-late-bell-banner.png",
+link:"movies.html"
+},
+{
+title:"FORGOTTEN ECHOES",
+description:"Every forgotten memory hides a dangerous truth.",
+image:"forgotten-echoes-banner.jpg",
+link:"movies.html"
+},
+{
+title:"COVENANT RESTORATION",
+description:"Faith. Hope. Redemption.",
+image:"covenant-restoration-banner.jpg",
+link:"movies.html"
+}
+];
 
+let current = 0;
+
+function changeHero(){
+
+current = (current + 1) % slides.length;
+
+document.getElementById("hero-title").innerHTML = slides[current].title;
+
+document.getElementById("hero-description").innerHTML = slides[current].innerHTML || slides[current].description;
+
+document.getElementById("hero-button").href = slides[current].link;
+
+document.querySelector(".hero").style.background =
+`linear-gradient(to right, rgba(0,0,0,.85), rgba(0,0,0,.35)),
+url('${slides[current].image}') center/cover no-repeat`;
+
+}
+
+setInterval(changeHero,6000);
+</script>
 </body>
 </html>
