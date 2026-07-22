@@ -48,12 +48,10 @@ header{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:15px 30px;
-    background:rgba(0,0,0,0.9);
-    backdrop-filter:blur(10px);
-    z-index:1000;
-    border-bottom:1px solid rgba(255,255,255,0.08);
-    }
+    padding:22px 60px;
+    background:linear-gradient(to bottom,rgba(0,0,0,.9),transparent);
+    z-index:999;
+}
     
 .logo img{
     width:50px;
@@ -102,18 +100,19 @@ class="search-box"
 id="searchBox"
 placeholder="Search GOFOCUS movies..."
 onkeyup="searchMovies()">
+    
 .hero{
     position:relative;
-    height:80vh;
+    height:92vh;
     display:flex;
     align-items:center;
-    justify-content:flex-start;
-    padding:0 7%;
+    padding-left:90px;
+
     background:
     linear-gradient(to right,
-    rgba(0,0,0,.95) 28%,
-    rgba(0,0,0,.65) 48%,
-    rgba(0,0,0,.15) 75%),
+    rgba(0,0,0,.96) 18%,
+    rgba(0,0,0,.55) 50%,
+    rgba(0,0,0,.15) 80%),
     url("home-or-school-banner.png");
 
     background-size:cover;
@@ -122,43 +121,33 @@ onkeyup="searchMovies()">
 }
 
 .hero-content{
-    max-width:520px;
-    z-index:2;
+    max-width:650px;
+    z-index:5;
 }
 
-.featured-tag{
-    display:inline-block;
-    background:#E50914;
-    color:#fff;
-    padding:8px 14px;
-    border-radius:5px;
-    font-size:14px;
-    font-weight:bold;
-    margin-bottom:18px;
-}
-
-.hero h3{
-    font-size:24px;
-    margin:0;
+.hero h1{
+    font-size:90px;
+    font-weight:800;
+    line-height:0.95;
+    margin:15px 0;
 }
 
 .hero h2{
     font-size:38px;
-    color:#ddd;
-    margin:8px 0;
+    color:#dddddd;
 }
 
-.hero h1{
-    font-size:72px;
-    line-height:1;
-    margin:0 0 20px;
+.hero h3{
+    font-size:28px;
+    color:white;
 }
 
 .hero p{
     font-size:22px;
-    line-height:1.6;
-    color:#ddd;
-    margin-bottom:30px;
+    color:#dddddd;
+    line-height:1.7;
+    margin-top:25px;
+    margin-bottom:35px;
 }
 
 .btn{
@@ -176,7 +165,6 @@ onkeyup="searchMovies()">
     background:#b20710;
 }
 
-/* Replace everything below with this */
 
 .hero-buttons{
     display:flex;
@@ -245,7 +233,7 @@ onkeyup="searchMovies()">
 
 .movie-card img{
     width:100%;
-    height:360px;
+    height:420px;
     object-fit:cover;
     display:block;
 }
