@@ -103,14 +103,12 @@ id="searchBox"
 placeholder="Search GOFOCUS movies..."
 onkeyup="searchMovies()">
 
-.hero{
-    position: relative;
-    height: 90vh;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 0 6%;
-    padding-left:80px;
+.hero-content{
+    position:relative;
+    z-index:2;
+    max-width:600px;
+    text-align:left;
+}
     
     background:
     linear-gradient(to right,
@@ -135,11 +133,11 @@ background:linear-gradient(transparent,#0b0b0b);
 }
 
 .hero h1{
-    .hero h1{
     font-size:clamp(48px,8vw,85px);
-    font-weight:600;
+    font-weight:700;
     line-height:1.1;
     margin-bottom:18px;
+    color:#fff;
 }
 
 .hero p{
@@ -265,14 +263,20 @@ background:linear-gradient(transparent,#0b0b0b);
     font-size:18px;
 }
 
-    .search-box{
-    padding:10px 15px;
-    border:none;
-    border-radius:20px;
-    background:#222;
+.search-box input{
+    background:#181818;
+    border:1px solid #333;
     color:#fff;
-    width:220px;
+    padding:12px 18px;
+    border-radius:30px;
+    width:260px;
     outline:none;
+    transition:.3s;
+}
+
+.search-box input:focus{
+    border-color:#E50914;
+    box-shadow:0 0 10px rgba(229,9,20,.4);
 }
 
 .search-box::placeholder{
@@ -346,22 +350,23 @@ background:linear-gradient(transparent,#0b0b0b);
     <img src="Gofocus Entertainment logo.png" alt="GOFOCUS Entertainment">
 </div>
 
-<nav>
-    <a href="index.html">Home</a>
-    <a href="news.html">News</a>
-    <a href="movie.html">Movie</a>
-    <a href="music.html">Music</a>
-    <a href="advertise.html">Advertise</a>
-    <a href="contact.html">Contact</a>
+<header>
+    <div class="logo">
+        <span style="color:white;">GOFOCUS</span>
+        <span style="color:#E50914;">Entertainment</span>
+    </div>
 
- <input
-type="text"
-class="search-box"
-id="searchBox"
-placeholder="Search GOFOCUS movies..."
-onkeyup="searchMovies()">
-</nav>
+    <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="news.html">News</a>
+        <a href="music.html">Music</a>
+        <a href="movies.html">Movies</a>
+        <a href="contact.html">Contact</a>
+    </nav>
 
+    <div class="search-box">
+        <input type="text" placeholder="Search GOFOCUS movies...">
+    </div>
 </header>
 
 <section class="hero">
@@ -370,14 +375,32 @@ onkeyup="searchMovies()">
 
 <div class="hero-content">
 
+<span style="color:#E50914;font-weight:bold;letter-spacing:3px;">
+GOFOCUS ORIGINAL
+</span>
+
 <h1>HOME OR SCHOOL</h1>
 
+<h2 style="font-size:34px;margin-top:10px;color:white;">
+THE LATE BELL
+</h2>
+
 <p>
-Episode 1 – The Late Bell<br>
-A boy enters a mysterious school where every bell hides a secret.
+A mysterious school where every bell hides another secret.
+One boy must discover the truth before the final bell rings.
 </p>
 
-<a href="movies.html" class="watch-btn">▶ Watch Now</a>
+<div class="hero-buttons">
+
+<a href="home-or-school.html" class="watch-btn">
+▶ Watch Now
+</a>
+
+<a href="home-or-school.html" class="info-btn">
+More Info
+</a>
+
+</div>
 
 </div>
 
