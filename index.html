@@ -267,6 +267,41 @@ onkeyup="searchMovies()">
     font-size:18px;
 }
 
+    .originals-row{
+    display:flex;
+    gap:20px;
+    overflow-x:auto;
+    padding:20px 0;
+}
+
+.originals-row::-webkit-scrollbar{
+    display:none;
+}
+
+.originals-row .movie-card{
+    min-width:220px;
+    background:#181818;
+    border-radius:12px;
+    overflow:hidden;
+    transition:.3s;
+}
+
+.originals-row .movie-card:hover{
+    transform:scale(1.05);
+}
+
+.originals-row img{
+    width:100%;
+    display:block;
+}
+
+.originals-row h3{
+    color:#fff;
+    padding:12px;
+    font-size:18px;
+    margin:0;
+    }
+
 .search-box input{
     background:#181818;
     border:1px solid #333;
@@ -401,50 +436,50 @@ onkeyup="searchMovies()">
 
     <h2>🎬 GOFOCUS ORIGINALS</h2>
 
-    <div class="originals-grid">
+<section class="originals">
 
-        <div class="movie-card searchable">
-            <a href="home-or-school.html">
-            <img src="home-or-school-poster.jpg"> alt="Home or School">
-            <div class="movie-info">
-                <h3>Home or School: The Late Bell</h3>
-                <span class="rating">⭐ 9.8</span>
-                <a href="movie.html" class="watch-btn">▶ Watch Now</a>
-            </div>
-        </div>
+<h2>🎬 GOFOCUS ORIGINALS</h2>
 
-        <div class="movie-card searchable">
-            <a href="movie.html">
-            <img src="forgotten-echoes-poster.jpg" alt="Forgotten Echoes">
-            <div class="movie-info">
-                <h3>Forgotten Echoes</h3>
-                <span class="rating">⭐ 9.7</span>
-                <a href="movies.html" class="watch-btn">▶ Watch Now</a>
-            </div>
-        </div>
+<div class="originals-row">
 
-        <div class="movie-card searchable">
-            <a href="movie.html">
-            <img src="covenant-restoration-poster.jpg" alt="Covenant Restoration">
-            <div class="movie-info">
-                <h3>Covenant Restoration</h3>
-                <span class="rating">⭐ 9.9</span>
-                <a href="movie.html" class="watch-btn">▶ Watch Now</a>
-            </div>
-        </div>
+<div class="movie-card">
+<a href="home-or-school.html">
+<img src="home-or-school-poster.jpg" alt="Episode 1">
+<h3>Episode 1<br>The Late Bell</h3>
+</a>
+</div>
 
-        <div class="movie-card searchable">
-            <a href="movie.html">
-            <img src="coming-soon-poster.jpg" alt="Coming Soon">
-            <div class="movie-info">
-                <h3>Coming Soon</h3>
-                <span class="rating">🎬 New Release</span>
-                <a href="#" class="info-btn">More Info</a>
-            </div>
-        </div>
+<div class="movie-card">
+<a href="episode2.html">
+<img src="episode2-poster.jpg" alt="Episode 2">
+<h3>Episode 2<br>Escape From Homework</h3>
+</a>
+</div>
 
-    </div>
-    </section>
+<div class="movie-card">
+<a href="episode3.html">
+<img src="episode3-poster.jpg" alt="Episode 3">
+<h3>Episode 3<br>The Cheating Plan</h3>
+</a>
+</div>
+
+<div class="movie-card">
+<a href="forgotten-echoes.html">
+<img src="forgotten-echoes-poster.jpg" alt="Forgotten Echoes">
+<h3>Forgotten Echoes</h3>
+</a>
+</div>
+
+<div class="movie-card">
+<a href="covenant-restoration.html">
+<img src="covenant-restoration-poster.jpg" alt="Covenant Restoration">
+<h3>Covenant Restoration</h3>
+</a>
+</div>
+
+</div>
+
+</section>
 <section class="trending">
 
 <h2>🔥 Trending Now</h2>
