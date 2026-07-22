@@ -108,8 +108,10 @@ onkeyup="searchMovies()">
     height: 90vh;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     padding: 0 6%;
+    padding-left:80px;
+    
     background:
     linear-gradient(to right,
     rgba(0,0,0,.95) 20%,
@@ -133,7 +135,8 @@ background:linear-gradient(transparent,#0b0b0b);
 }
 
 .hero h1{
-    font-size:clamp(38px,7vw,72px);
+    .hero h1{
+    font-size:clamp(48px,8vw,85px);
     font-weight:600;
     line-height:1.1;
     margin-bottom:18px;
@@ -366,15 +369,18 @@ onkeyup="searchMovies()">
 <div class="hero-overlay"></div>
 
 <div class="hero-content">
-    <h1 id="hero-title">HOME OR SCHOOL<br>THE LATE BELL – EPISODE 1</h1>
-    <p id="hero-description">
+
+<h1>HOME OR SCHOOL</h1>
+
+<p>
+Episode 1 – The Late Bell<br>
 A boy enters a mysterious school where every bell hides a secret.
-    </p>
-    <div class="hero-buttons">
-        <a href="movie.html" class="watch-btn" id="hero-button">▶ Watch Now</a>
-        <a href="movie.html" class="info-btn">More Info</a>
-    </div>
+</p>
+
+<a href="movies.html" class="watch-btn">▶ Watch Now</a>
+
 </div>
+
 </section>
     <section class="originals">
 
