@@ -454,7 +454,69 @@ nav a.active{
 
 .ad-button a:hover{
     background:#ff1f2d;
-    }
+}
+/* ===== Quick Links ===== */
+
+.quick-links{
+    width:90%;
+    margin:30px auto;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.quick-card{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    padding:22px;
+    border-radius:10px;
+    color:#fff;
+    transition:.3s;
+}
+
+.quick-card:hover{
+    transform:translateY(-5px);
+}
+
+.quick-card .icon{
+    font-size:34px;
+}
+
+.quick-card h3{
+    margin:0;
+    font-size:22px;
+}
+
+.quick-card p{
+    margin:5px 0 0;
+    color:#ddd;
+    font-size:15px;
+}
+
+.music{
+    background:#2b1749;
+}
+
+.news{
+    background:#4a1010;
+}
+
+.movies{
+    background:#6b4a00;
+}
+
+.contact{
+    background:#0d4d27;
+}
+
+@media(max-width:900px){
+
+.quick-links{
+    grid-template-columns:1fr;
+}
+ }
+    
 </style>
 </head>
 <body>
@@ -556,6 +618,43 @@ nav a.active{
 </div>
 
 </section>
+
+   <section class="quick-links">
+
+<div class="quick-card music">
+    <div class="icon">🎵</div>
+    <div>
+        <h3>MUSIC</h3>
+        <p>Listen to the best songs and albums</p>
+    </div>
+</div>
+
+<div class="quick-card news">
+    <div class="icon">📰</div>
+    <div>
+        <h3>NEWS</h3>
+        <p>Get the latest entertainment news</p>
+    </div>
+</div>
+
+<div class="quick-card movies">
+    <div class="icon">🎬</div>
+    <div>
+        <h3>MOVIES</h3>
+        <p>Watch the newest movies & series</p>
+    </div>
+</div>
+
+<div class="quick-card contact">
+    <div class="icon">👤</div>
+    <div>
+        <h3>CONTACT</h3>
+        <p>Get in touch with us</p>
+    </div>
+</div>
+
+</section> 
+    
 <section class="trending">
 
 <h2>🔥 Trending Now</h2>
