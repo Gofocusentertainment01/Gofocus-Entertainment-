@@ -403,6 +403,58 @@ nav a.active{
     font-size:26px;
     cursor:pointer;
     }
+    /* ===== Advertise Banner ===== */
+
+.advertise-banner{
+    width:90%;
+    margin:40px auto;
+    background:#111;
+    border:1px solid #222;
+    border-radius:10px;
+    padding:25px 35px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:20px;
+}
+
+.ad-icon{
+    font-size:55px;
+}
+
+.ad-text{
+    flex:1;
+}
+
+.ad-text h2{
+    color:#fff;
+    font-size:36px;
+    margin:0 0 10px;
+}
+
+.ad-text h2 span{
+    color:#E50914;
+}
+
+.ad-text p{
+    color:#ccc;
+    font-size:18px;
+    margin:0;
+}
+
+.ad-button a{
+    background:#E50914;
+    color:#fff;
+    text-decoration:none;
+    padding:15px 32px;
+    border-radius:6px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.ad-button a:hover{
+    background:#ff1f2d;
+    }
 </style>
 </head>
 <body>
@@ -677,19 +729,18 @@ class="btn">
 </a>
 
 </section>
-<!-- ADVERTISE WITH GOFOCUS -->
+<section class="advertise-banner">
 
-<section style="padding:70px 5%;background:#111;text-align:center;">
+    <div class="ad-icon">📢</div>
 
-<h2 style="color:#E50914;font-size:40px;">
-💼 Advertise With GOFOCUS Entertainment
-</h2>
+    <div class="ad-text">
+        <h2>ADVERTISE WITH <span>GOFOCUS</span></h2>
+        <p>Promote your brand to millions of viewers across the world.</p>
+    </div>
 
-<p style="max-width:700px;margin:20px auto;font-size:20px;">
-Promote your business, music, movie, event or brand to thousands of visitors.
-</p>
-
-<a href="advertise.html" class="btn">Advertise Now</a>
+    <div class="ad-button">
+        <a href="advertise.html">Learn More</a>
+    </div>
 
 </section>
 
