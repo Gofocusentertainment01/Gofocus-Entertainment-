@@ -367,18 +367,66 @@ onkeyup="searchMovies()">
     background:#E50914;
     transform:translateY(-5px);
 }
+
+    /* ---------- NAVBAR ---------- */
+
+.navbar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background:#000;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 5%;
+    z-index:1000;
+    box-sizing:border-box;
+}
+
+.logo{
+    color:#fff;
+    font-size:32px;
+    font-weight:bold;
+}
+
+.logo .red{
+    color:#E50914;
+}
+
+nav{
+    display:flex;
+    gap:35px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    transition:.3s;
+}
+
+nav a:hover,
+nav a.active{
+    color:#E50914;
+}
+
+.search{
+    color:white;
+    font-size:26px;
+    cursor:pointer;
+    }
 </style>
 </head>
 <body>
 
 <header>
+<header class="navbar">
     <div class="logo">
-        <span style="color:white;">GOFOCUS</span>
-        <span style="color:#E50914;">Entertainment</span>
+        <span>GOFOCUS</span> <span class="red">Entertainment</span>
     </div>
 
     <nav>
-        ...
         <a href="index.html" class="active">Home</a>
         <a href="news.html">News</a>
         <a href="music.html">Music</a>
@@ -386,8 +434,8 @@ onkeyup="searchMovies()">
         <a href="contact.html">Contact</a>
     </nav>
 
-    <div class="search-box">
-        <input type="text" placeholder="Search GOFOCUS movies...">
+    <div class="search">
+        🔍
     </div>
 </header>
 
