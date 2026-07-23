@@ -211,6 +211,8 @@ nav a:hover::after{
     overflow:hidden;
     transition:all .35s ease;
     cursor:pointer;
+    min-width:220px;
+    flex:0 0 auto;
 }
 
 .movie-card:hover{
@@ -312,21 +314,17 @@ nav a:hover::after{
     display:flex;
     gap:20px;
     overflow-x:auto;
-    padding-bottom:15px;
+    padding:10px 0;
     scroll-behavior:smooth;
 }
 
 .trending-row::-webkit-scrollbar{
-    height:8px;
+    height:6px;
 }
 
 .trending-row::-webkit-scrollbar-thumb{
     background:#E50914;
     border-radius:10px;
-}
-
-.trending-row .movie-card{
-    min-width:220px;
 }
     .categories{
     padding:60px 6%;
@@ -703,23 +701,29 @@ Sponsored Advertisements
 
 </section>
 
-<footer class="footer">
+<footer style="background:#0a0a0a;border-top:1px solid #222;padding:25px 5%;">
 
-<div class="footer-logo">
-<h2>GOFOCUS+</h2>
-<p>Watch • Read • Listen • Learn</p>
+<div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px;">
+
+<div>
+<h2 style="margin:0;color:#fff;">
+GOFOCUS <span style="color:#E50914;">Entertainment</span>
+</h2>
 </div>
 
-<div class="footer-links">
-<a href="index.html">Home</a>
-<a href="movies.html">Movies</a>
-<a href="news.html">News</a>
-<a href="music.html">Music</a>
-<a href="contact.html">Contact</a>
+<div style="display:flex;gap:18px;font-size:22px;">
+<a href="#" style="color:#fff;text-decoration:none;">📘</a>
+<a href="#" style="color:#fff;text-decoration:none;">📷</a>
+<a href="#" style="color:#fff;text-decoration:none;">🐦</a>
+<a href="#" style="color:#fff;text-decoration:none;">▶</a>
+<a href="#" style="color:#fff;text-decoration:none;">🎵</a>
 </div>
 
-<div class="footer-copy">
-<p>© 2026 GOFOCUS Entertainment. All rights reserved.</p>
+<div style="text-align:right;color:#aaa;font-size:14px;">
+<p style="margin:0;">Privacy Policy | Terms of Use</p>
+<p style="margin:5px 0 0;">© 2026 GOFOCUS Entertainment</p>
+</div>
+
 </div>
 
 </footer>
