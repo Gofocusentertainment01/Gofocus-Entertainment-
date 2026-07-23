@@ -514,8 +514,23 @@ nav a.active{
     grid-template-columns:1fr;
 }
  }
-    
+    .social-icons{
+    display:flex;
+    gap:18px;
+}
+
+.social-icons a{
+    color:#fff;
+    font-size:24px;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.social-icons a:hover{
+    color:#E50914;
+}
 </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
 
@@ -711,12 +726,18 @@ GOFOCUS <span style="color:#E50914;">Entertainment</span>
 </h2>
 </div>
 
-<div style="display:flex;gap:18px;font-size:22px;">
-<a href="#" style="color:#fff;text-decoration:none;">📘</a>
-<a href="#" style="color:#fff;text-decoration:none;">📷</a>
-<a href="#" style="color:#fff;text-decoration:none;">🐦</a>
-<a href="#" style="color:#fff;text-decoration:none;">▶</a>
-<a href="#" style="color:#fff;text-decoration:none;">🎵</a>
+<div class="social-icons">
+
+<a href="#"><i class="fab fa-facebook-f"></i></a>
+
+<a href="#"><i class="fab fa-instagram"></i></a>
+
+<a href="#"><i class="fab fa-x-twitter"></i></a>
+
+<a href="#"><i class="fab fa-youtube"></i></a>
+
+<a href="#"><i class="fab fa-tiktok"></i></a>
+
 </div>
 
 <div style="text-align:right;color:#aaa;font-size:14px;">
