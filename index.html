@@ -93,13 +93,7 @@ nav a:hover{
 
 nav a:hover::after{
     width:100%;
-
-<input
-type="text"
-class="search-box"
-id="searchBox"
-placeholder="Search GOFOCUS movies..."
-onkeyup="searchMovies()">
+}
     .hero{
     position:relative;
     width:100%;
@@ -413,10 +407,10 @@ nav a.active{
 </head>
 <body>
 
-
 <header class="navbar">
     <div class="logo">
-        <span>GOFOCUS</span> <span class="red">Entertainment</span>
+        <span>GOFOCUS</span>
+        <span class="red">Entertainment</span>
     </div>
 
     <nav>
@@ -426,14 +420,20 @@ nav a.active{
         <a href="movies.html">Movies</a>
         <a href="contact.html">Contact</a>
     </nav>
+    <input
+    type="text"
+    class="search-box"
+    id="searchBox"
+    placeholder="Search GOFOCUS..."
+    onkeyup="searchMovies()">
 
-    <div class="search">
-        🔍
-    </div>
+<div class="search">
+    🔍
+</div>
+
 </header>
 
 <section class="hero">
-
     <div class="hero-overlay"></div>
 
     <div class="hero-content">
@@ -451,29 +451,13 @@ nav a.active{
         </p>
 
         <div class="buttons">
-
-            <a href="movies.html" class="watch">
-                ▶ Watch Now
-            </a>
-
-            <a href="movies.html" class="info">
-                ⓘ More Info
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
-
-        <div class="buttons">
             <a href="home-or-school.html" class="watch">▶ Watch Now</a>
             <a href="home-or-school.html" class="info">ⓘ More Info</a>
         </div>
 
     </div>
-
 </section>
+
     <section class="originals">
 
     <h2>🎬 GOFOCUS ORIGINALS</h2>
@@ -525,10 +509,10 @@ nav a.active{
 <div class="trending-row">
 
 <div class="movie-card searchable">
-<a href="movie.html">
-<img src="home-or-school-poster.jpg"> alt="The Late Bell">
-</a>
-<h3>Home or School</h3>
+    <a href="movie.html">
+        <img src="home-or-school-poster.jpg" alt="The Late Bell">
+    </a>
+    <h3>Home or School</h3>
 </div>
 
 <div class="movie-card searchable">
@@ -564,8 +548,7 @@ nav a.active{
 
 <a href="watch.html">
 
-<img src="home-or-school-poster.jpg">
-
+<img src="home-or-school-poster.jpg" alt="The Late Bell">
 </a>
 
 <h3>The Late Bell</h3>
@@ -768,11 +751,17 @@ style="position:fixed;bottom:20px;right:20px;background:#25D366;color:white;widt
 <script>
 const slides = [
 {
-title:"HOME OR SCHOOL<br>THE LATE BELL",
-description:"A boy enters a mysterious school where every bell hides a secret.",
-image"home-or-school-banner.png",
-link:"movies.html"
-},
+<h1 id="hero-title">THE LATE BELL</h1>
+
+<p id="hero-description">
+A boy enters a mysterious school where every bell hides a secret.
+</p>
+
+<a href="home-or-school.html"
+   class="watch"
+   id="hero-button">
+▶ Watch Now
+</a>
 {
 title:"FORGOTTEN ECHOES",
 description:"Every forgotten memory hides a dangerous truth.",
@@ -798,7 +787,9 @@ document.getElementById("hero-title").innerHTML = slides[current].title;
 document.getElementById("hero-description").innerHTML = slides[current].innerHTML || slides[current].description;
 
 document.getElementById("hero-button").href = slides[current].link;
-
+document.querySelector(".hero").style.background =
+`linear-gradient(to right, rgba(0,0,0,.85), rgba(0,0,0,.35)),
+url('${slides[current].image}') center/cover no-repeat`;
 document.querySelector(".hero").style.background =
 `linear-gradient(to right, rgba(0,0,0,.85), rgba(0,0,0,.35)),
 url('${slides[current].image}') center/cover no-repeat`;
